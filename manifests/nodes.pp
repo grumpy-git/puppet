@@ -7,5 +7,6 @@ node 'cookbook2' {
 
   user { 'billy': ensure => 'present', }
   user { 'sammy': ensure => 'present', }
+  user { 'willy': ensure => 'present', }
 }
   
