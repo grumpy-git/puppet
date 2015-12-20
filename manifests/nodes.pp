@@ -5,6 +5,7 @@ node 'cookbook' {
 node 'cookbook2' {
   include puppet
 
-  user { 'billy': ensure => 'present' }
+  user { 'billy': ensure => 'present', }
+  user { 'sammy': ensure => 'present', }
 }
   
