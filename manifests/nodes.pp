@@ -10,4 +10,8 @@ node 'cookbook2' {
   user { 'willy': ensure => 'present', }
   user { 'archie': ensure => 'present', }
 }
+
+node 'cookbook3' {
+  include puppet   
+}
   
