@@ -4,6 +4,7 @@ node 'cookbook' {
 
 node 'cookbook2' {
   include puppet
+  include sethostname
 
   user { 'billy': ensure => 'present', }
   user { 'sammy': ensure => 'present', }
