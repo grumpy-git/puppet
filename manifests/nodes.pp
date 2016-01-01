@@ -18,3 +18,5 @@ node 'cookbook3' {
   include puppet   
 }
   
+node 'default' {
+}
