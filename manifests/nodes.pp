@@ -1,3 +1,5 @@
+$var="EEEEEEEEEEEEEEEEEEEEEEE"
+
 node 'cookbook' {
   include puppet   
 }
