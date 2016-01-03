@@ -19,4 +19,5 @@ node 'cookbook3' {
 }
   
 node 'default' {
+  include sethostname
 }
