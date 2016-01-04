@@ -10,11 +10,16 @@ class sethostname {
     onlyif    => "/usr/bin/test -f /tmp/host_name",
     require   => Exec['set-hostname']
   } 
+  exec { "set-hostname3":
+    command   => "/bin/echo `/sbin/ip -4 route get 1 | /usr/bin/head -1 | cut -d' ' -f8`  `hostname`  >> /etc/hosts",
+    onlyif    => "/usr/bin/test -f /tmp/host_name",
+    require   => Exec['set-hostname']
+  } 
 
 
   file { "/tmp/host_name": 
     ensure  => absent,
-    require => Exec['set-hostname2']
+    require => Exec['set-hostname3']
   }
 
 
