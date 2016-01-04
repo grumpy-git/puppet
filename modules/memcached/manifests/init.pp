@@ -13,7 +13,7 @@ class memcached {
   }
   
   service { 'memcached':
-    ensure    => 'runnng',
+    ensure    => 'running',
     enable    => true,
     require   => [Package['memcached'],
                          File['/etc/memcached.conf']],
