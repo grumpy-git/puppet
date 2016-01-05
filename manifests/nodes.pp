@@ -1,4 +1,4 @@
-$var="EEEEEEEEEEEEEEEEEEEEEEE"
+
 
 node 'cookbook' {
   include puppet   
@@ -7,6 +7,7 @@ node 'cookbook' {
 node 'cookbook2' {
   include puppet
   include memcached
+  include apache
 
   user { 'billy': ensure => 'present', }
   user { 'sammy': ensure => 'present', }
@@ -17,7 +18,8 @@ node 'cookbook2' {
 node 'cookbook3' {
   include puppet   
 }
-  
+
+
 node 'default' {
   include sethostname
 }
