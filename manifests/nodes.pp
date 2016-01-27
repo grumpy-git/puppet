@@ -1,4 +1,7 @@
 
+node 'toenail.gnrs.co.uk' {
+  include toenail
+}
 
 node 'cookbook' {
   include puppet   
