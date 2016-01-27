@@ -26,3 +26,11 @@ node 'cookbook3' {
 node 'default' {
   include sethostname
 }
+
+node 'heartbeat1' {
+  include puppet
+}
+
+node 'heartbeat2' {
+  
+}
