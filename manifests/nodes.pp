@@ -32,5 +32,5 @@ node 'heartbeat1' {
 }
 
 node 'heartbeat2' {
-  
+  include puppet
 }
